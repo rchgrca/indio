@@ -7,6 +7,7 @@ import css from './styles/style.styl';
 import App from './components/App';
 import Single from './components/Single';
 import PhotoGrid from './components/PhotoGrid';
+import CreateContainer from './components/create/CreateContainer';
 import PreviewContainer from './components/preview/PreviewContainer';
 import ExportContainer from './components/export/ExportContainer';
 //import router
@@ -20,6 +21,7 @@ const router = (
         <Router history={history}>
             <Route path="/" component={App}>
                 <IndexRoute component={PhotoGrid}></IndexRoute>
+                <Route path="/create" component={CreateContainer}></Route>
                 <Route path="/preview" component={PreviewContainer}></Route>
                 <Route path="/export" component={ExportContainer}></Route>
                 <Route path="/view/:postId" component={Single}></Route>
