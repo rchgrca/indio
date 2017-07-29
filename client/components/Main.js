@@ -7,7 +7,7 @@ import TabsContainer from './misc/TabsContainer';
 export default class Main extends Component {
     render(){
         return (
-            <div className="clearfix px1">
+            <div className="px1">
                 <HeaderContainer title={`Indio Form Builder`}/>
                 <section className={`${methods.getGridStyle(8)} pb2 main border`}>
                     <TabsContainer handleClickTab={methods.handleClickTab} tabStyle={methods.getTabStyle()} />
