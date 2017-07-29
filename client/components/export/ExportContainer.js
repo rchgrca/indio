@@ -17,7 +17,7 @@ export default class ExportContainer extends Component {
         return (
             <div className="preview-container center px4">
                 <h3 className="">{`Export`}</h3>
-                <code className="border p4 block text-area">
+                <code className="border p3 mb3 block text-area">
                     {`${JSON.stringify(oExport)}`}
                 </code>
             </div>
