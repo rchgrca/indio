@@ -7,8 +7,8 @@ export default Object.assign({}, {
         return `sm-col sm-col-${n}`;
     },
 
-    getInputStyle(){
-        return "border-box w100 p1 border-none";
+    getTabStyle(){
+        return "inline-block mr3";
     },
 
     isEmpty(obj) {

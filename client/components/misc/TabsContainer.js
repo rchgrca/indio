@@ -1,15 +1,29 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
+import { Link } from 'react-router';
 
 export default class TabsContainer extends Component {
     render() {
-        let { title, handleClickTab } = this.props;
+        let { title, handleClickTab, tabStyle } = this.props;
         return (
-            <ul>
-                <li onClick={handleClickTab} className={`inline-block mr3`}>Create</li>
-                <li onClick={handleClickTab} className={`inline-block mr3`}>Preview</li>
-                <li onClick={handleClickTab} className={`inline-block mr3`}>Export</li>
-            </ul>
+            <div className="tabscontainer">
+                <ul className="pl0 items">
+                    <li className={tabStyle}>
+                        <Link to={`/create`}>Create</Link>
+                    </li>
+                    <li className={tabStyle}>
+                        <Link to={`/preview`}>Preview</Link>
+                    </li>
+                    <li className={tabStyle}>
+                        <Link to={`/export`}>Export</Link>
+                    </li>
+                </ul>
+                <div className="content">
+                    content
+                </div>
+            </div>
+
+
         )
     }
 }
