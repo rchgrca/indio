@@ -3,11 +3,13 @@ import { render } from 'react-dom';
 
 export default class TabsContainer extends Component {
     render() {
-        let { title } = this.props;
+        let { title, handleClickTab } = this.props;
         return (
-            <div>
-                <h2 className="center">Tabs</h2>
-            </div>
+            <ul>
+                <li onClick={handleClickTab} className={`inline-block mr3`}>Create</li>
+                <li onClick={handleClickTab} className={`inline-block mr3`}>Preview</li>
+                <li onClick={handleClickTab} className={`inline-block mr3`}>Export</li>
+            </ul>
         )
     }
 }

@@ -12,7 +12,7 @@ export default class Main extends Component {
             <div className="clearfix px1">
                 <HeaderContainer title={`Indio Form Builder`}/>
                 <section className={`${methods.getGridStyle(8)} pb2 main border`}>
-                    <TabsContainer />
+                    <TabsContainer handleClickTab={methods.handleClickTab}/>
                     {React.cloneElement(this.props.children, this.props)}
                 </section>
                 <section className={`${methods.getGridStyle(4)} visual`}>
