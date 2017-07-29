@@ -1,7 +1,4 @@
 export default Object.assign({}, {
-    handleClickTab(e){
-        console.log(e.target.innerHTML)
-    },
 
     getGridStyle(n){
         return `sm-col sm-col-${n}`;
@@ -18,4 +15,5 @@ export default Object.assign({}, {
         }
         return true;
     }
+    
 })

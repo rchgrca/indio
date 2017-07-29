@@ -20,10 +20,10 @@ const router = (
     <Provider store={store}>
         <Router history={history}>
             <Route path="/" component={App}>
-                <IndexRoute component={PhotoGrid}></IndexRoute>
-                <Route path="/create" component={CreateContainer}></Route>
+                <IndexRoute component={CreateContainer}></IndexRoute>
                 <Route path="/preview" component={PreviewContainer}></Route>
                 <Route path="/export" component={ExportContainer}></Route>
+                <Route path="/reduxstagram" component={PhotoGrid}></Route>
                 <Route path="/view/:postId" component={Single}></Route>
             </Route>
         </Router>

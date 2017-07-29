@@ -4,12 +4,12 @@ import { Link } from 'react-router';
 
 export default class TabsContainer extends Component {
     render() {
-        let { title, handleClickTab, tabStyle } = this.props;
+        const { title, handleClickTab, tabStyle } = this.props;
         return (
             <div className="tabscontainer">
-                <ul className="pl0 items">
+                <ul className="pl3 items">
                     <li className={tabStyle}>
-                        <Link to={`/create`}>Create</Link>
+                        <Link to={`/`}>Create</Link>
                     </li>
                     <li className={tabStyle}>
                         <Link to={`/preview`}>Preview</Link>
@@ -17,10 +17,10 @@ export default class TabsContainer extends Component {
                     <li className={tabStyle}>
                         <Link to={`/export`}>Export</Link>
                     </li>
+                    <li className={tabStyle}>
+                        <Link to={`/reduxstagram`}>Reduxstagram</Link>
+                    </li>
                 </ul>
-                <div className="content">
-                    content
-                </div>
             </div>
 
 
