@@ -15,10 +15,10 @@ export default class CreateContainer extends Component {
 
         return (
             <div>
+                <h3 className="center">{`Create`}</h3>
                 <ul className="list-reset ml3 clearfix">
                     <li className="clearfix">
                         <form className="preview-container col col-6">
-                            <h3 className="center">{`Create`}</h3>
                             <fieldset>
                                 <legend>Car ownership</legend>
                                 <ul className="list-reset">
