@@ -5,7 +5,7 @@ export default class InputSelect extends Component {
     render() {
         let { value, ref, extraClassNames } = this.props;
         return (
-            <div class="styled-select slate">
+            <div>
                 <select className={extraClassNames} ref={ref}>
                     <option value="Yes">Yes</option>
                     <option value="No">No</option>

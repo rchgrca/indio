@@ -21,22 +21,33 @@ export default class CreateContainer extends Component {
                             <h3 className="center">{`Create`}</h3>
                             <fieldset>
                                 <legend>Car ownership</legend>
-                                <ul className="list-reset ml3">
+                                <ul className="list-reset">
                                     <li className="row-1">
                                         <div className="mb2 clearfix">
-                                            <Label value={`Question`} ref={`preview-label-1`} extraClassNames={`col col-2 mb2 right-align pt1`}/>
-                                            <InputText placeholder={`Do you own a car?`} ref={`preview-text-1-1`} extraClassNames={`col col-9 ml2 p1 `}/>
+                                            <span className="col col-2 py1 pr1 right-alig">
+                                                <Label value={`Question`} ref={`preview-label-1`} extraClassNames={``}/>
+                                            </span>
+                                            <span className="col col-10">
+                                                <InputText placeholder={`Do you own a car?`} ref={`preview-text-1-1`} extraClassNames={`p1 w100`}/>
+                                            </span>
                                         </div>
                                         <div className="mb2 clearfix">
-                                            <Label value={`Type`} ref={`preview-label-1`} extraClassNames={`col col-2 mb2 right-align`}/>
-                                            <InputSelect placeholder={`Do you own a car?`} ref={`preview-select-1-1`} extraClassNames={`col col-9 ml2`} options={[]}/>
+                                            <span className="col col-2 pr1 right-align">
+                                                <Label value={`Type`} ref={`preview-label-1`} extraClassNames={``}/>
+                                            </span>
+                                            <span className="col col-10">
+                                                <InputSelect placeholder={`Do you own a car?`} ref={`preview-select-1-1`} extraClassNames={`w100`} options={[]}/>
+                                            </span>
+                                        </div>
+                                        <div className="mb2 clearfix">
+                                            <span className="col col-2">&nbsp;</span>
+                                            <span className="col col-10 right-align">
+                                                <InputButton value={`Add Sub-Input`} ref={`preview-button-sub-input-1`} extraClassNames={`${methods.getButtonStyle()}`}/>
+                                                <InputButton value={`Delete`} ref={`preview-button-delete-sub-input-1`} extraClassNames={`${methods.getButtonStyle()} ml1`}/>
+                                            </span>
                                         </div>
                                     </li>
                                 </ul>
-                                <div className="btn-container right-align">
-                                    <InputButton value={`Add Sub-Input`} ref={`preview-button-sub-input-1`} extraClassNames={`${methods.getButtonStyle()} ml3`}/>
-                                    <InputButton value={`Delete`} ref={`preview-button-delete-sub-input-1`} extraClassNames={`${methods.getButtonStyle()} ml3`}/>
-                                </div>
                             </fieldset>
                         </form>
                     </li>
