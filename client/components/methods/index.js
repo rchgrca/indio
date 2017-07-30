@@ -5,7 +5,15 @@ export default Object.assign({}, {
     },
 
     getTabStyle(){
-        return "inline-block mr3";
+        return `inline-block mr3`;
+    },
+
+    getButtonStyle(){
+        return `px3 py0 bg-lightseagreen white border border-radius-5 rounded`
+    },
+
+    getHeaderStyle(){
+        return `py1 mb2 bg-navy white`
     },
 
     isEmpty(obj) {
@@ -15,5 +23,5 @@ export default Object.assign({}, {
         }
         return true;
     }
-    
+
 })
