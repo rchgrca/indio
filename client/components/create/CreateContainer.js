@@ -8,6 +8,7 @@ import InputText from '../form/InputText';
 import InputRadio from '../form/InputRadio';
 import InputButton from '../form/InputButton';
 import InputSelect from '../form/InputSelect';
+import SubInputContainer from './SubInputContainer';
 
 export default class CreateContainer extends Component {
     render() {
@@ -17,40 +18,20 @@ export default class CreateContainer extends Component {
             <div>
                 <h3 className="center">{`Create`}</h3>
                 <ul className="list-reset ml3 clearfix">
-                    <li className="clearfix">
-                        <form className="preview-container col col-6">
-                            <fieldset>
-                                <legend>Car ownership</legend>
-                                <ul className="list-reset">
-                                    <li className="row-1">
-                                        <div className="mb2 clearfix">
-                                            <span className="col col-2 py1 pr1 right-alig">
-                                                <Label value={`Question`} ref={`preview-label-1`} extraClassNames={``}/>
-                                            </span>
-                                            <span className="col col-10">
-                                                <InputText placeholder={`Do you own a car?`} ref={`preview-text-1-1`} extraClassNames={`p1 w100`}/>
-                                            </span>
-                                        </div>
-                                        <div className="mb2 clearfix">
-                                            <span className="col col-2 pr1 right-align">
-                                                <Label value={`Type`} ref={`preview-label-1`} extraClassNames={``}/>
-                                            </span>
-                                            <span className="col col-10">
-                                                <InputSelect placeholder={`Do you own a car?`} ref={`preview-select-1-1`} extraClassNames={`w100`} options={[]}/>
-                                            </span>
-                                        </div>
-                                        <div className="mb2 clearfix">
-                                            <span className="col col-2">&nbsp;</span>
-                                            <span className="col col-10 right-align">
-                                                <InputButton value={`Add Sub-Input`} ref={`preview-button-sub-input-1`} extraClassNames={`${methods.getButtonStyle()}`}/>
-                                                <InputButton value={`Delete`} ref={`preview-button-delete-sub-input-1`} extraClassNames={`${methods.getButtonStyle()} ml1`}/>
-                                            </span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </fieldset>
-                        </form>
-                    </li>
+                    <SubInputContainer />
+                    <ul className="list-reset ml4 clearfix">
+                        <SubInputContainer />
+                        <ul className="list-reset ml4 clearfix">
+                            <SubInputContainer />
+                            <SubInputContainer />
+                            <ul className="list-reset ml4 clearfix">
+                                <SubInputContainer />
+                            </ul>
+                            <SubInputContainer />
+                        </ul>
+                    </ul>
+                    <SubInputContainer />
+                    <SubInputContainer />
                 </ul>
                 <InputButton value={`Add Input`} ref={`create-input`} extraClassNames={`${methods.getButtonStyle()} ml3`}/>
             </div>
