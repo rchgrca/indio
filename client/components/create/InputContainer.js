@@ -39,8 +39,7 @@ export default class InputContainer extends Component {
                                 <div className="mb2 clearfix">
                                     <span className="col col-2">&nbsp;</span>
                                     <span className="col col-10 right-align">
-                                        <InputButton value={`Add Sub-Input`} extraClassNames={`${methods.getButtonStyle()}`}/>
-                                        <InputButton value={`Delete`} extraClassNames={`${methods.getButtonStyle()} ml1`}/>
+                                        {this.getButtons(buttons)}
                                     </span>
                                 </div>
                             </li>
@@ -49,5 +48,11 @@ export default class InputContainer extends Component {
                 </form>
             </li>
         )
+    }
+
+    getButtons(buttons){
+        return buttons.map((button) => {
+            return <InputButton value={button} extraClassNames={`${methods.getButtonStyle()} ml1`}/>
+        });
     }
 }
