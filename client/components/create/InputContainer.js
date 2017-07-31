@@ -21,7 +21,7 @@ export default class InputContainer extends Component {
                         <ul className="list-reset">
                             <li className="row-1">
                                 <div className="mb2 clearfix">
-                                    <span className="col col-2 py1 pr1 right-alig">
+                                    <span className="col col-2 py1 pr1 right-align">
                                         <Label value={`Question`} extraClassNames={``}/>
                                     </span>
                                     <span className="col col-10">
