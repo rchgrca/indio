@@ -18,17 +18,17 @@ const form = {
     inputs:{
         car:{
             legend: "Car Data",
-            question:"Do you own a car?",
+            placeholder:"e.g. Do you own a car?",
             buttons:["Add Sub-Input", "Delete"],
         },
         building:{
             legend: "Building Data",
-            question:"What year was your building built?",
+            placeholder:"e.g. What year was your building built?",
             buttons:["Add Sub-Input", "Delete"],
         },
         company:{
             legend: "Company Data",
-            question:"What is your company name?",
+            placeholder:"e.g. What is your company name?",
             buttons:["Add Sub-Input", "Delete"],
         }
     }
