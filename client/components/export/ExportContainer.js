@@ -5,16 +5,7 @@ import form from '../../data/form';
 
 export default class ExportContainer extends Component {
     render() {
-        let { title } = this.props,
-        oExport = {
-            options: {
-                responsive: true,
-                cutoutPercentage: 0,
-                animation: {
-                    animateScale: true
-                }
-            }
-        };
+        let { title } = this.props;
 
         return (
             <div className="preview-container center px4">
