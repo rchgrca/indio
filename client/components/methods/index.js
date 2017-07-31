@@ -1,4 +1,4 @@
-export default Object.assign({}, {
+export default {
 
     getGridStyle(n){
         return `sm-col sm-col-${n}`;
@@ -24,4 +24,4 @@ export default Object.assign({}, {
         return true;
     }
 
-})
+}
