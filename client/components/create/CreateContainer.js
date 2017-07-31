@@ -12,7 +12,7 @@ import InputContainer from './InputContainer';
 
 export default class CreateContainer extends Component {
     render() {
-        let { title, form: { inputs: { car, building, company } } } = this.props;
+        let { form: { inputs: { car, building, company } } } = this.props;
 
         return (
             <div>

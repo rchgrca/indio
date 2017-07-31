@@ -9,8 +9,6 @@ import InputRadio from '../form/InputRadio';
 
 export default class PreviewContainer extends Component {
     render() {
-        let { title } = this.props;
-
         return (
             <div className="preview-container">
                 <form>

@@ -5,7 +5,7 @@ import methods from '../methods/index';
 
 export default class ExportContainer extends Component {
     render() {
-        let { title, form: { inputs } } = this.props;
+        let { form: { inputs } } = this.props;
 
         return (
             <div className="preview-container center px4">
