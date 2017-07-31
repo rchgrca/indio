@@ -51,8 +51,8 @@ export default class InputContainer extends Component {
     }
 
     getButtons(buttons){
-        return buttons.map((button) => {
-            return <InputButton value={button} extraClassNames={`${methods.getButtonStyle()} ml1`}/>
+        return buttons.map((button, i) => {
+            return <InputButton value={button} extraClassNames={`${methods.getButtonStyle()} ml1`} key={i}/>
         });
     }
 }
