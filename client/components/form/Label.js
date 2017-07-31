@@ -3,9 +3,9 @@ import { render } from 'react-dom';
 
 export default class Label extends Component {
     render() {
-        let { value, ref, extraClassNames } = this.props;
+        let { value, extraClassNames } = this.props;
         return (
-            <label className={extraClassNames} ref={ref}>{value}</label>
+            <label className={extraClassNames}>{value}</label>
         )
     }
 }

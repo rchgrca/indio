@@ -22,7 +22,7 @@ export default class CreateContainer extends Component {
                     <InputContainer data={inputBuilding}/>
                     <InputContainer data={inputCar}/>
                 </ul>
-                <InputButton value={`Add Input`} ref={`create-input`} extraClassNames={`${methods.getButtonStyle()} ml3`}/>
+                <InputButton value={`Add Input`} extraClassNames={`${methods.getButtonStyle()} ml3`}/>
             </div>
         )
     }

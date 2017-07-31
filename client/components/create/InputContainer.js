@@ -22,25 +22,25 @@ export default class InputContainer extends Component {
                             <li className="row-1">
                                 <div className="mb2 clearfix">
                                     <span className="col col-2 py1 pr1 right-alig">
-                                        <Label value={`Question`} ref={`preview-label-1`} extraClassNames={``}/>
+                                        <Label value={`Question`} extraClassNames={``}/>
                                     </span>
                                     <span className="col col-10">
-                                        <InputText placeholder={question} ref={`preview-text-1-1`} extraClassNames={`p1 w100`}/>
+                                        <InputText placeholder={question} extraClassNames={`p1 w100`}/>
                                     </span>
                                 </div>
                                 <div className="mb2 clearfix">
                                     <span className="col col-2 pr1 right-align">
-                                        <Label value={`Type`} ref={`preview-label-1`} extraClassNames={``}/>
+                                        <Label value={`Type`} extraClassNames={``}/>
                                     </span>
                                     <span className="col col-10">
-                                        <InputSelect placeholder={`Do you own a car?`} ref={`preview-select-1-1`} extraClassNames={`w100`} options={[]}/>
+                                        <InputSelect placeholder={`Do you own a car?`} extraClassNames={`w100`} options={[]}/>
                                     </span>
                                 </div>
                                 <div className="mb2 clearfix">
                                     <span className="col col-2">&nbsp;</span>
                                     <span className="col col-10 right-align">
-                                        <InputButton value={`Add Sub-Input`} ref={`preview-button-sub-input-1`} extraClassNames={`${methods.getButtonStyle()}`}/>
-                                        <InputButton value={`Delete`} ref={`preview-button-delete-sub-input-1`} extraClassNames={`${methods.getButtonStyle()} ml1`}/>
+                                        <InputButton value={`Add Sub-Input`} extraClassNames={`${methods.getButtonStyle()}`}/>
+                                        <InputButton value={`Delete`} extraClassNames={`${methods.getButtonStyle()} ml1`}/>
                                     </span>
                                 </div>
                             </li>
