@@ -26,7 +26,6 @@ const form = {
             placeholder:"e.g. Do you own a car?",
             buttons:["Add Sub-Input", "Delete"],
             subInput:{}
-
         },
         building:{
             legend: "Building Data",
