@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 
+import methods from '../methods/index';
+
 import Label from '../form/Label';
 import InputText from '../form/InputText';
 import InputRadio from '../form/InputRadio';
@@ -11,7 +13,6 @@ export default class PreviewContainer extends Component {
 
         return (
             <div className="preview-container">
-                <h3 className="center">{`Preview`}</h3>
                 <form>
                     <ul className="list-reset ml3">
                         <li className="row-1 mb4">

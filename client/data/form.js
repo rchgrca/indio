@@ -1,4 +1,10 @@
 const form = {
+    tabs:{
+      create:"Create",
+      preview:"Preview",
+      "export":"Export",
+      reduxstagram:"Reduxstagram"
+    },
     selectInputOptions:{
         text:"Text",
         number:"Number",

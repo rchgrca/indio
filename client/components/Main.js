@@ -10,7 +10,7 @@ export default class Main extends Component {
             <div className="px1">
                 <HeaderContainer title={`Indio Form Builder`} extraClassNames={methods.getHeaderStyle()}/>
                 <section className={`${methods.getGridStyle(9)} pb2 main border`}>
-                    <TabsContainer handleClickTab={methods.handleClickTab} tabStyle={methods.getTabStyle()} />
+                    <TabsContainer handleClickTab={methods.handleClickTab} tabStyle={methods.getTabStyle()} {...this.props}/>
                     { React.cloneElement(this.props.children, this.props)}
                 </section>
                 <section className={`${methods.getGridStyle(3)} visual`}>
