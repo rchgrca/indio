@@ -19,17 +19,6 @@ export default class CreateContainer extends Component {
                 <h3 className="center">{`Create`}</h3>
                 <ul className="list-reset ml3 clearfix">
                     <InputContainer data={inputCar}/>
-                    <ul className="list-reset ml4 clearfix">
-                        <InputContainer />
-                        <ul className="list-reset ml4 clearfix">
-                            <InputContainer />
-                            <InputContainer />
-                            <ul className="list-reset ml4 clearfix">
-                                <InputContainer />
-                            </ul>
-                            <InputContainer />
-                        </ul>
-                    </ul>
                     <InputContainer data={inputBuilding}/>
                     <InputContainer data={inputCar}/>
                 </ul>
