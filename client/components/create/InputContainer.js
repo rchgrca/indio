@@ -11,7 +11,7 @@ import InputSelect from '../form/InputSelect';
 
 export default class InputContainer extends Component {
     render() {
-        let { title, data: { legend, placeholder, buttons } } = this.props;
+        let { title, data: { legend, placeholder, buttons }, form: { label: { question, type, condition } } } = this.props;
 
         return (
             <li className="clearfix mb3">
@@ -22,7 +22,7 @@ export default class InputContainer extends Component {
                             <li className="row-1">
                                 <div className="mb2 clearfix">
                                     <span className="col col-2 py1 pr1 right-align">
-                                        <Label value={`Question`} extraClassNames={``}/>
+                                        <Label value={question} extraClassNames={``}/>
                                     </span>
                                     <span className="col col-10">
                                         <InputText placeholder={placeholder} extraClassNames={`p1 w100`}/>
@@ -30,7 +30,7 @@ export default class InputContainer extends Component {
                                 </div>
                                 <div className="mb2 clearfix">
                                     <span className="col col-2 pr1 right-align">
-                                        <Label value={`Type`} extraClassNames={``}/>
+                                        <Label value={type} extraClassNames={``}/>
                                     </span>
                                     <span className="col col-10">
                                         <InputSelect placeholder={`Do you own a car?`} extraClassNames={`w100`} options={[]}/>

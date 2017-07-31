@@ -18,9 +18,9 @@ export default class CreateContainer extends Component {
             <div>
                 <h3 className="center">{`Create`}</h3>
                 <ul className="list-reset ml3 clearfix">
-                    <InputContainer data={car}/>
-                    <InputContainer data={building}/>
-                    <InputContainer data={company}/>
+                    <InputContainer data={car} {...this.props}/>
+                    <InputContainer data={building} {...this.props}/>
+                    <InputContainer data={company} {...this.props}/>
                 </ul>
                 <InputButton value={`Add Input`} extraClassNames={`${methods.getButtonStyle()} ml3`}/>
             </div>

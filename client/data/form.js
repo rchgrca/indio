@@ -15,11 +15,17 @@ const form = {
         greaterThan:"Greater than",
         lessThan:"Less Than"
     },
+    label: {
+        question:"Question",
+        type:"Type",
+        condition:"Condition"
+    },
     inputs:{
         car:{
             legend: "Car Data",
             placeholder:"e.g. Do you own a car?",
             buttons:["Add Sub-Input", "Delete"],
+
         },
         building:{
             legend: "Building Data",
