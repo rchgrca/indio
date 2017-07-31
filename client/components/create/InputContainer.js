@@ -11,7 +11,11 @@ import InputSelect from '../form/InputSelect';
 
 export default class InputContainer extends Component {
     render() {
-        let { title, form: { label: { question, type, condition }, button } } = this.props;
+        let {
+            title,
+            input: { question, type, subInput },
+            form: { labelQuestion, labelType, labelCondition, button }
+        } = this.props;
 
         return (
             <li className="clearfix mb3">
@@ -20,18 +24,18 @@ export default class InputContainer extends Component {
                         <li className="row-1 border px3 py2 rounded border-color-gray">
                             <div className="mb2 clearfix">
                                 <span className="col col-2 py1 pr1 right-align">
-                                    <Label value={question} extraClassNames={``}/>
+                                    <Label value={labelQuestion} extraClassNames={``}/>
                                 </span>
                                 <span className="col col-10">
-                                    <InputText extraClassNames={`p1 w100`}/>
+                                    <InputText value={question} extraClassNames={`p1 w100`}/>
                                 </span>
                             </div>
                             <div className="mb2 clearfix">
                                 <span className="col col-2 pr1 right-align">
-                                    <Label value={type} extraClassNames={``}/>
+                                    <Label value={labelType} extraClassNames={``}/>
                                 </span>
                                 <span className="col col-10">
-                                    <InputSelect extraClassNames={`w100`} options={[]}/>
+                                    <InputSelect selected={type} extraClassNames={`w100`} options={[]}/>
                                 </span>
                             </div>
                             <div className="clearfix">

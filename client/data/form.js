@@ -15,11 +15,9 @@ const form = {
         greaterThan:"Greater than",
         lessThan:"Less Than"
     },
-    label: {
-        question:"Question",
-        type:"Type",
-        condition:"Condition"
-    },
+    labelQuestion:"Question",
+    labelType:"Type",
+    labelCondition:"Condition",
     button:{
         addSubInput:"Add Sub-Input",
         delete:"Delete"
@@ -28,25 +26,21 @@ const form = {
         {
             question:"Do you own a car?",
             type:"radio",
-            input:true,
             subInput:{}
         },
         {
             question:"What year was your building built?",
             type:"number",
-            input:true,
             subInput:{}
         },
         {
             question:"What is the name of your company?",
             type:"text",
-            input:true,
             subInput:{}
         },
         {
             question:"",
             type:"",
-            input:true,
             subInput:{}
         }
     ]
