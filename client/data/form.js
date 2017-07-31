@@ -25,17 +25,20 @@ const form = {
             legend: "Car Data",
             placeholder:"e.g. Do you own a car?",
             buttons:["Add Sub-Input", "Delete"],
+            subInput:{}
 
         },
         building:{
             legend: "Building Data",
             placeholder:"e.g. What year was your building built?",
             buttons:["Add Sub-Input", "Delete"],
+            subInput:{}
         },
         company:{
             legend: "Company Data",
             placeholder:"e.g. What is your company name?",
             buttons:["Add Sub-Input", "Delete"],
+            subInput:{}
         }
     }
 };
