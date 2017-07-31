@@ -12,15 +12,15 @@ import InputContainer from './InputContainer';
 
 export default class CreateContainer extends Component {
     render() {
-        let { title, form: { inputCar, inputBuilding, inputCompany } } = this.props;
+        let { title, form: { inputs: { car, building, company } } } = this.props;
 
         return (
             <div>
                 <h3 className="center">{`Create`}</h3>
                 <ul className="list-reset ml3 clearfix">
-                    <InputContainer data={inputCar}/>
-                    <InputContainer data={inputBuilding}/>
-                    <InputContainer data={inputCar}/>
+                    <InputContainer data={car}/>
+                    <InputContainer data={building}/>
+                    <InputContainer data={company}/>
                 </ul>
                 <InputButton value={`Add Input`} extraClassNames={`${methods.getButtonStyle()} ml3`}/>
             </div>
