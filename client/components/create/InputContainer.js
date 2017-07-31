@@ -27,7 +27,7 @@ export default class InputContainer extends Component {
                                     <Label value={labelQuestion} extraClassNames={``}/>
                                 </span>
                                 <span className="col col-10">
-                                    <InputText value={question} extraClassNames={`p1 w100`}/>
+                                    <InputText value={question} extraClassNames={`p1 w100`} {...this.props}/>
                                 </span>
                             </div>
                             <div className="mb2 clearfix">
@@ -35,7 +35,7 @@ export default class InputContainer extends Component {
                                     <Label value={labelType} extraClassNames={``}/>
                                 </span>
                                 <span className="col col-10">
-                                    <InputSelect selected={type} extraClassNames={`w100`} options={[]}/>
+                                    <InputSelect selected={type} extraClassNames={`w100`} {...this.props}/>
                                 </span>
                             </div>
                             <div className="clearfix">
