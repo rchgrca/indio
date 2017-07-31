@@ -12,11 +12,14 @@ import rootReducer from './reducers/index';
 
 import comments from './data/comments';
 import posts from './data/posts';
+import form from './data/form'
 
 // create an object for the default data
+// create accompanying reducer in /reducers/index.js & /reducers/<newState>.js
 const defaultState = {
     posts,
-    comments
+    comments,
+    form
 }
 
 // chrome Redux devtool
