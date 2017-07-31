@@ -3,18 +3,18 @@ import { render } from 'react-dom';
 
 export default class InputSelect extends Component {
     render() {
-        let { form: { selectInputOptions } , type, extraClassNames } = this.props;
+        let { form: { selectInputOptions }, selected, extraClassNames } = this.props;
 
         return (
             <div>
-                <select className={extraClassNames} value={type}>
-                    {this.getSelectOptions(selectInputOptions, type)}
+                <select className={extraClassNames} defaultValue={selected}>
+                    {this.getSelectOptions(selectInputOptions)}
                 </select>
             </div>
         )
     }
 
-    getSelectOptions(selectInputOptions, type){
+    getSelectOptions(selectInputOptions){
         let aOptions = Object.keys(selectInputOptions)
         return aOptions.map((option, i) => {
             return <option value={option} key={i}>{selectInputOptions[option]}</option>
