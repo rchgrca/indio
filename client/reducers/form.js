@@ -5,27 +5,29 @@
 function form(state=[], action){
     switch(action.type){
         case 'ADD_INPUT':
-        console.log('...adding INPUT')
-            return [
+            return {
                 ...state,
-                {
-                    question:"",
-                    type:"",
-                    subInput:{}
-                }
-            ]
+                inputs:[
+                    ...state.inputs,
+                    {
+                        question:"",
+                        type:"",
+                        subInput:{}
+                    }
+                ]
+            }
             break;
         case 'ADD_SUBINPUT':
-        console.log('...adding SUBINPUT')
-            return [
+            console.log('...adding SUBINPUT')
+            return {
                 ...state
-            ]
+            }
             break;
         case 'DELETE_INPUT':
-        console.log('...deleting')
-            return [
+            console.log('...deleting')
+            return {
                 ...state
-            ]
+            }
             break;
         default:
             return state

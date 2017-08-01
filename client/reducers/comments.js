@@ -19,7 +19,6 @@ pattern of building Redux apps
 - http://redux.js.org/docs/basics/Reducers.html
 */
 function postComments(state=[], action){
-    console.log(action)
     switch(action.type){
         case 'ADD_COMNENT':
             // return new state with new comment

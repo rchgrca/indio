@@ -32,7 +32,6 @@ export function removeComment(postId, i){
 }
 // add input
 export function addInput(){
-    console.log("RICH.addInput()")
     return {
         type: 'ADD_INPUT'
     }
