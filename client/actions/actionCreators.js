@@ -45,8 +45,9 @@ export function addSubInput(){
 }
 
 // delete input
-export function deleteInput(){
+export function deleteInput(i){
     return {
-        type: 'DELETE_INPUT'
+        type: 'DELETE_INPUT',
+        i
     }
 }

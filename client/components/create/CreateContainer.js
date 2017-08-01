@@ -25,7 +25,7 @@ export default class CreateContainer extends Component {
 
     getInputs(inputs){
         return inputs.map((input, i) => {
-            return <InputContainer input={input} {...this.props} key={i}/>
+            return <InputContainer input={input} {...this.props} inputNum={i} key={i}/>
         });
     }
 }

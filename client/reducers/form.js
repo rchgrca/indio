@@ -24,9 +24,12 @@ function form(state=[], action){
             }
             break;
         case 'DELETE_INPUT':
-            console.log('...deleting')
             return {
-                ...state
+                ...state,
+                inputs:[
+                    ...state.inputs.slice(0, action.i),
+                    ...state.inputs.slice(action.i + 1)
+                ]
             }
             break;
         default:
