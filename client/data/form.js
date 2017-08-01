@@ -1,4 +1,4 @@
-const form = {
+let form = {
     tabs:{
       create:"Create",
       preview:"Preview",

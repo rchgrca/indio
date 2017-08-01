@@ -6,7 +6,7 @@ import methods from '../methods/index';
 
 export default class TabsContainer extends Component {
     render() {
-        const { title, handleClickTab, tabStyle, form: { tabs }, location: { pathname } } = this.props;
+        let { title, handleClickTab, tabStyle, form: { tabs }, location: { pathname } } = this.props;
 
         return (
             <div className="tabscontainer">
@@ -18,7 +18,7 @@ export default class TabsContainer extends Component {
     }
 
     getTabs(tabs, pathname, tabStyle){
-        const aTabs = Object.keys(tabs);
+        let aTabs = Object.keys(tabs);
 
         return aTabs.map((tab, i) => {
             let tabRoute = tab,

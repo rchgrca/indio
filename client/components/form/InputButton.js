@@ -10,7 +10,7 @@ export default class InputButton extends Component {
     }
 
     getHandler(value, addInput, addSubInput, deleteInput, inputNum){
-        const oHandler = {
+        let oHandler = {
             "Add Input":addInput,
             "Add Sub-Input":addSubInput.bind(null,inputNum),
             "Delete":deleteInput.bind(null,inputNum)
