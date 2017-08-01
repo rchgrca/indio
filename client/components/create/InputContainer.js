@@ -19,7 +19,7 @@ export default class InputContainer extends Component {
 
         return (
             <li className="clearfix mb3">
-                <form className="preview-container col col-6">
+                <div className="preview-container col col-6">
                     <ul className="list-reset">
                         <li className="row-1 border px3 py2 rounded border-color-gray">
                             <div className="mb2 clearfix">
@@ -46,7 +46,7 @@ export default class InputContainer extends Component {
                             </div>
                         </li>
                     </ul>
-                </form>
+                </div>
             </li>
         )
     }
