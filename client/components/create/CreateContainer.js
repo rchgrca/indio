@@ -18,7 +18,7 @@ export default class CreateContainer extends Component {
                 <ul className="list-reset ml3 clearfix">
                     {this.getInputs(inputs)}
                 </ul>
-                <InputButton value={`Add Input`} extraClassNames={`${methods.getButtonStyle()} ml3`}/>
+                <InputButton value={`Add Input`} extraClassNames={`${methods.getButtonStyle()} ml3`} {...this.props}/>
             </div>
         )
     }

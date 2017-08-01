@@ -54,7 +54,7 @@ export default class InputContainer extends Component {
     getButtons(button){
         let buttons = Object.keys(button);
         return buttons.map((value, i) => {
-            return <InputButton value={button[value]} extraClassNames={`${methods.getButtonStyle()} ml1`} key={i}/>
+            return <InputButton value={button[value]} extraClassNames={`${methods.getButtonStyle()} ml1`} key={i} {...this.props}/>
         });
     }
 }

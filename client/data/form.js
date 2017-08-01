@@ -37,11 +37,6 @@ const form = {
             question:"What is the name of your company?",
             type:"text",
             subInput:{}
-        },
-        {
-            question:"",
-            type:"",
-            subInput:{}
         }
     ]
 };
