@@ -13,6 +13,7 @@ export default class InputContainer extends Component {
     render() {
         let {
             title,
+            inputNum,
             input: { question, type, subInput },
             form: { labelQuestion, labelType, labelCondition, button }
         } = this.props;
